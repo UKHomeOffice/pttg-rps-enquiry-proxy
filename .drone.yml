@@ -16,7 +16,7 @@ pipeline:
     secrets:
     - docker_password
     commands:
-    - docker login -u="ukhomeofficedigital+pttg" -p=${DOCKER_PASSWORD} quay.io
+    - docker login -u="ukhomeofficedigital+pttg" -p=$${DOCKER_PASSWORD} quay.io
     - docker tag pttg-rps-enquiry-proxy quay.io/ukhomeofficedigital/pttg-rps-enquiry-proxy:build-$${DRONE_BUILD_NUMBER}
     - docker push quay.io/ukhomeofficedigital/pttg-rps-enquiry-proxy:build-$${DRONE_BUILD_NUMBER}
     when:
@@ -28,7 +28,7 @@ pipeline:
     environment:
     - DOCKER_HOST=tcp://172.17.0.1:2375
     commands:
-    - docker login -u="ukhomeofficedigital+pttg" -p=${DOCKER_PASSWORD} quay.io
+    - docker login -u="ukhomeofficedigital+pttg" -p=$${DOCKER_PASSWORD} quay.io
     - docker tag pttg-rps-enquiry-proxy quay.io/ukhomeofficedigital/pttg-rps-enquiry-proxy:$${DRONE_TAG}
     - docker push quay.io/ukhomeofficedigital/pttg-rps-enquiry-proxy:$${DRONE_TAG}
     when:
