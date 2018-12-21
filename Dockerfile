@@ -1,5 +1,3 @@
-FROM quay.io/ukhomeofficedigital/nginx-proxy:v3.4.5
+FROM quay.io/ukhomeofficedigital/nginx-proxy-govuk:v3.4.5
 
-ADD ./pttg /
-
-ENTRYPOINT ["/copy_custom_errors_and_start.sh"]
+ADD ./html/ /usr/local/openresty/nginx/html/
