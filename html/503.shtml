@@ -1,0 +1,3 @@
+<!--#set var="title" value="Sorry, there is a problem with the enquiry form" -->
+<!--#set var="partial" value="503" -->
+<!--#include file="template.shtml" -->

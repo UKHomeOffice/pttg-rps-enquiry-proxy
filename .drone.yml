@@ -20,7 +20,7 @@ pipeline:
     - docker tag pttg-rps-enquiry-proxy quay.io/ukhomeofficedigital/pttg-rps-enquiry-proxy:build-$${DRONE_BUILD_NUMBER}
     - docker push quay.io/ukhomeofficedigital/pttg-rps-enquiry-proxy:build-$${DRONE_BUILD_NUMBER}
     when:
-      brancj: master
+      branch: master
       event: push
 
   tag-docker-image-with-git-tag:

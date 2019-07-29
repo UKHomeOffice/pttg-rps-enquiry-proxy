@@ -1,0 +1,8 @@
+<!--#if expr="$verbose_error_pages = TRUE" -->
+  <!--#set var="title" value="Request denied" -->
+  <!--#set var="partial" value="418-request-denied" -->
+<!--#else -->
+  <!--#set var="title" value="Sorry, there is a problem with the enquiry form" -->
+  <!--#set var="partial" value="50x" -->
+<!--#endif -->
+<!--#include file="template.shtml" -->
