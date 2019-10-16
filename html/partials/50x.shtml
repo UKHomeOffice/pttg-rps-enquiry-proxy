@@ -1,10 +1,44 @@
-<p>Try again later.</p>
-<p>Your answers have not been saved and your question has not been sent. If the problem continues, please contact the EU Settlement Resolution Centre by telephone:</p>
-<p>Telephone:</p>
-<p><strong>0300 123 7379</strong></p>
-<p>Outside the UK:</p>
-<p><strong>+44 (0)203 080 0010</strong></p>
-<p>Opening times:</p>
-<p><strong>Monday to Friday, excluding bank holidays: 8am to 8pm</strong></p>
-<p><strong>Saturday and Sunday: 9.30am to 4.30pm</strong></p>
-<div><a href="https://www.gov.uk/call-charges">Find out about call charges</a></div>
+<div class="u-fr" style="float: right">
+    <ul class="c-language-nav">
+        <li class="c-language-nav__item cy_errors hidden" >
+            <a lang="en" hreflang="en" class="language-nav-link" href="#"
+               onclick="document.getElementsByClassName('en_errors')[0].classList.remove('hidden');
+                        document.getElementsByClassName('en_errors')[1].classList.remove('hidden');
+                        document.getElementsByClassName('cy_errors')[0].classList.add('hidden');
+                        document.getElementsByClassName('cy_errors')[1].classList.add('hidden');"
+            >English</a>
+        </li>
+        <li class="c-language-nav__item en_errors">
+            <a lang="cy" hreflang="cy" class="language-nav-link" href="#"
+               onclick="document.getElementsByClassName('en_errors')[0].classList.add('hidden');
+                        document.getElementsByClassName('en_errors')[1].classList.add('hidden');
+                        document.getElementsByClassName('cy_errors')[0].classList.remove('hidden');
+                        document.getElementsByClassName('cy_errors')[1].classList.remove('hidden');"
+            >Cymraeg</a>
+        </li>
+    </ul>
+</div>
+<div class="en_errors"/>
+    <p>Try again later.</p>
+    <p>Your answers have not been saved and your question has not been sent. If the problem continues, please contact the EU Settlement Resolution Centre by telephone:</p>
+    <p>Telephone:</p>
+    <p><strong>0300 123 7379</strong></p>
+    <p>Outside the UK:</p>
+    <p><strong>+44 (0)203 080 0010</strong></p>
+    <p>Opening times:</p>
+    <p><strong>Monday to Friday, excluding bank holidays: 8am to 8pm</strong></p>
+    <p><strong>Saturday and Sunday: 9.30am to 4.30pm</strong></p>
+    <div><a href="https://www.gov.uk/call-charges">Find out about call charges</a></div>
+</div>
+<div class="cy_errors hidden"/>
+    <p>Ceisiwch eto yn nes ymlaen.</p>
+    <p>Nid yw eich atebion wedi'u cadw ac nid yw eich cwestiynau wedi'u hanfon. Os bydd y broblem yn parhau, cysylltwch â Chanolfan Datrys Setliadau’r UE dros y ffôn:</p>
+    <p>Ffôn:</p>
+    <p><strong>0300 123 7379</strong></p>
+    <p>Tu allan i’r DU:</p>
+    <p><strong>+44 (0)203 080 0010</strong></p>
+    <p>Oriau Agor:</p>
+    <p><strong>Dydd Llun i ddydd Gwener, ac eithrio gwyliau banc: 8am i 8pm</strong></p>
+    <p><strong>Dydd Sadwrn a dydd Sul: 9:30 am i 4.30pm</strong></p>
+    <div><a href="https://www.gov.uk/costau-galwadau">Darganfyddwch am daliadau galwadau</a></div>
+</div>
