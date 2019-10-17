@@ -1,20 +1,10 @@
 <div class="u-fr" style="float: right">
     <ul class="c-language-nav">
         <li class="c-language-nav__item cy_errors hidden" >
-            <a lang="en" hreflang="en" class="language-nav-link" href="#"
-               onclick="document.getElementsByClassName('en_errors')[0].classList.remove('hidden');
-                        document.getElementsByClassName('en_errors')[1].classList.remove('hidden');
-                        document.getElementsByClassName('cy_errors')[0].classList.add('hidden');
-                        document.getElementsByClassName('cy_errors')[1].classList.add('hidden');"
-            >English</a>
+            <a lang="en" hreflang="en" class="language-nav-link" href="#" onclick="showEnglishErrors()">English</a>
         </li>
         <li class="c-language-nav__item en_errors">
-            <a lang="cy" hreflang="cy" class="language-nav-link" href="#"
-               onclick="document.getElementsByClassName('en_errors')[0].classList.add('hidden');
-                        document.getElementsByClassName('en_errors')[1].classList.add('hidden');
-                        document.getElementsByClassName('cy_errors')[0].classList.remove('hidden');
-                        document.getElementsByClassName('cy_errors')[1].classList.remove('hidden');"
-            >Cymraeg</a>
+            <a lang="cy" hreflang="cy" class="language-nav-link" href="#" onclick="showWelshErrors()">Cymraeg</a>
         </li>
     </ul>
 </div>
@@ -42,3 +32,23 @@
     <p><strong>Dydd Sadwrn a dydd Sul: 9:30 am i 4.30pm</strong></p>
     <div><a href="https://www.gov.uk/costau-galwadau">Darganfyddwch am daliadau galwadau</a></div>
 </div>
+<script>
+    function showWelshErrors() {
+        showElements(document.getElementsByClassName('cy_errors'));
+        hideElements(document.getElementsByClassName('en_errors'));
+    }
+    function showEnglishErrors() {
+        showElements(document.getElementsByClassName('en_errors'));
+        hideElements(document.getElementsByClassName('cy_errors'));
+    }
+    function hideElements(elements) {
+        for (let el = 0; el < elements.length; el++) {
+            elements[el].classList.add('hidden');
+        }
+    }
+    function showElements(elements) {
+        for (let el = 0; el < elements.length; el++) {
+            elements[el].classList.remove('hidden');
+        }
+    }
+</script>
